@@ -52,11 +52,11 @@ Now you're gonna use vscode for everything. Almost no GitHub from now on.
   ```
   npx stylelint "**/*.{css,scss}"
   ```
-with 
+- With:
   ```
   npx stylelint "**/*.scss"
   ```
-  
+
 - Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
 
 **SET-UP LOCAL LINTERS:**
