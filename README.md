@@ -42,7 +42,15 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
 
 - PART 3: HTML + CSS LINTER CONFIGURATION
   > *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/linters-config/tree/master/html-css-js)
-  - 
+  - **SET-UP GITHUB ACTIONS** (GITHUB LINTERS TEST)
+    - Create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
+  - **SET-UP LINTERS IN YOUR LOCAL ENVIRONMENT**
+    - Create a `.gitignore` file in your *ROOT* directory and add `node_module` to it:
+      ```
+      # .gitignore
+      node_modules/
+      ```
+    - 
 
 ## Built with
 - HTML5
