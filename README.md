@@ -45,8 +45,8 @@ Now you're gonna use vscode for everything. Almost no GitHub from now on.
 > Thanks to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help on the step 3 below:
 
 3. If you work with SCSS files, you need to perform a few modifications to the linter configuration files.
-  - In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `"**/*.{css,scss}"` with `"**/*.scss"`
-  - Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
+    - In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `"**/*.{css,scss}"` with `"**/*.scss"`
+    - Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
 
 **SET-UP LOCAL LINTERS:**
 - Create a `.gitignore` file in your *ROOT* directory and add `node_module` to it:
