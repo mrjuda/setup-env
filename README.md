@@ -47,7 +47,7 @@ Now you're gonna use vscode for everything. Almost no GitHub from now on.
   mkdir .github; mkdir .github/workflows; touch .github/workflows/linters.yml
   ```
   
-2. Make sure you copy/paste the content of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that file.
+2. Make sure you copy/paste the content of [`.github/workflows/linters.yml`](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.github/workflows/linters.yml) to that file.
 
 > Thanks to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help on the step 3 below:
 
@@ -80,7 +80,7 @@ You can get the Lighthouse report by any of the following ways:
 touch .hintrc
 ```
 
-  Make sure you copy/paste the content of [.hintrc](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.hintrc) to that file.
+  Make sure you copy/paste the content of [.hintrc](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.hintrc) to that file.
 
 
 3. Run the following command to fix validation errors:
@@ -99,7 +99,7 @@ npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standa
 touch .stylelintrc.json
 ```
 
-  Make sure you copy/paste the content of [.stylelintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.stylelintrc.json) to that file.
+  Make sure you copy/paste the content of [.stylelintrc.json](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.stylelintrc.json) to that file.
 
 3. Run the following command on the root directory of your project to fix linter errors:
   ```
@@ -114,6 +114,12 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
 ```
 
 2. Copy [.eslintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.eslintrc.json) to the root directory of your project
+  ```
+  touch .eslintrc.json
+  ```
+
+  Make sure you copy/paste the content of [.eslintrc.json](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.eslintrc.json) to that file.
+
 3. Run the following command on the root directory of your project to fix linter errors:
   ```
   npx eslint .
