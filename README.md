@@ -163,18 +163,10 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
 
 ### 5. LINT EVERYTHING
 To linter your files locally (before pushing to your GitHub repository), use the following commands:
-1. Styles (`*.scss` files):
-```
-npx stylelint "**/*.scss"
-```
-2. Markup (`*.html` files):
-```
-npx hint .
-```
-3. JavaScript (`*.js` files)
-```
-npx eslint .
-```
+1. Styles (`*.scss` files): `npx stylelint "**/*.scss"`
+2. Markup (`*.html` files): `npx hint .`
+3. JavaScript (`*.js` files): `npx eslint .`
+
 Or... use it all together:
 ```
 npx stylelint "**/*.scss"
