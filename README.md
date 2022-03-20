@@ -52,7 +52,7 @@ Now you're gonna use vscode for everything. Almost no GitHub from now on.
   ```
   npx stylelint "**/*.{css,scss}"
   ```
-- With:
+  With:
   ```
   npx stylelint "**/*.scss"
   ```
