@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mrjuda/sandbox-books-es6/issues"
   },
-  "homepage": "https://github.com/mrjuda/sandbox-books-es6#readme"
+  "homepage": "https://github.com/mrjuda/sandbox-books-es6#readme",
+  "devDependencies": {
+    "hint": "^6.1.10"
+  }
 }
