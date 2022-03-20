@@ -113,7 +113,9 @@ You can get the Lighthouse report by any of the following ways:
 9. ADD: COMMIT: PUSH: 
 
   `git add .`
+
   `git commit -m "Add initial folders and files"`
+  
   `git push`
 
 ### PART 4: SCSS SETTINGS
