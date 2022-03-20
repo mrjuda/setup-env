@@ -54,14 +54,13 @@ Now you're gonna use vscode for everything. Almost no GitHub from now on.
 > Thanks to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help on the step 3 below:
 
 3. If you work with SCSS files, you need to perform a few modifications to the linter configuration files.
-- In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `"**/*.{css,scss}"` with `"**/*.scss"`
+- In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `npx stylelint "**/*.{css,scss}"` with `npx stylelint "**/*.scss"`
 - Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
 
 **SET-UP LOCAL LINTERS:**
-- Create a `.gitignore` file in your *ROOT* directory and add `node_module` to it:
+- Create a `.gitignore` file in your *ROOT* directory and add `node_modules` to it:
   ```
-  # .gitignore
-  node_modules/
+  touch .gitignore; echo '# .gitignore' >> .gitignore; echo 'node_modules\' >> .gitignore
   ```
 
 **LIGHTHOUSE:**
@@ -156,7 +155,7 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
   <script src="./modules/index.js"></script>
   </body>
   </html>
-```
+  ```
 8. Create a directory called `modules`.
   ```
   mkdir modules
