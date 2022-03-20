@@ -9,37 +9,41 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
 - Apply these settings to a project: Awesome Books
 ### Tutorial
 #### PART 1: REPOSITORY: CREATE AND SYNC
-- New repo on GitHub (MIT LICENSE ONLY, no README, no nothing)
-- Open vscode > Clone Git Repository > Clone from GitHub > choose the one you created
-- Choose a local folder to sync the repo > open the project
-- With the project open in vscode, open the VSCODE TERMINAL
-- Initial SYNC/PUSH to the GitHub repository:
+1. Create a new repo on GitHub (MIT LICENSE ONLY, no README, no nothing)
+2. Open vscode > Clone Git Repository > Clone from GitHub > choose the one you created
+3. Choose a local folder to sync the repo > open the project
+4. With the project open in vscode, open the VSCODE TERMINAL
+5. Initial SYNC/PUSH to the GitHub repository:
   `git push --set-upstream origin main` (make sure there are no errors)
 
   > If you get any errors, make sure you connect your local Git instalation to your remote Github repository properly.
 
-- Create a new branch > Add > Commit > Push:
+6. Create a new branch > Add > Commit > Push:
   `git checkout -b repoSetup` >> `git push --set-upstream origin repoSetup`
-- Open LICENSE file > ADD A BLANK LINE to the end of the file
-- SAVE: ADD: COMMIT: PUSH:
+7. Open LICENSE file > ADD A BLANK LINE to the end of the file
+8. SAVE: ADD: COMMIT: PUSH:
   `git add .` >> `git commit -m "Initial commit"` >> `git push`
-- Open GitHub > Open a new PULL REQUEST from this branch **(DO IT LIKE A PRO)**
-- Now, you're gonna use vscode for everything. Almost no GitHub from now on.
+9. Open GitHub > Open a new PULL REQUEST from this branch **(DO IT LIKE A PRO)**
+
+Now, you're gonna use vscode for everything. Almost no GitHub from now on.
 
 #### PART 2: HTML + CSS LINTER CONFIGURATION
 > *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/linters-config/tree/master/html-css-js)
 
 **SET-UP GITHUB ACTIONS:**
-- Create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that folder.
+1. Create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that folder.
   ```
   mkdir .github
   mkdir .github/workflows
   touch .github/workflows/linters.yml
   ```
-- Make sure you copy/paste the content of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that file.
-  > NOTE: If you work with SCSS files, you need to perform a few modifications to the linter configuration files.
-    1. In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `"**/*.{css,scss}"` with `"**/*.scss"`
-    2. Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
+2. Make sure you copy/paste the content of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that file.
+
+> Thanks to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help on the step 3 below:
+
+3. If you work with SCSS files, you need to perform a few modifications to the linter configuration files.
+  1. In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `"**/*.{css,scss}"` with `"**/*.scss"`
+  2. Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
 
 **SET-UP LOCAL LINTERS:**
 - Create a `.gitignore` file in your *ROOT* directory and add `node_module` to it:
@@ -112,9 +116,13 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
   `git add .` >> `git commit -m "Add initial folders and files"` >> `git push`
 
 #### PART 4: SCSS SETTINGS
-> Huge thanks to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help here.
-- 
-
+> Thanks again to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help here.
+1. Make sure you have the "LIVE SASS COMPILER" extension installed on your VSCODE
+2. Create a `index.scss` inside your styles directory
+  `touch ./styles/index.scss`
+3. On the bottom of your VSCODE, click on the "WATCH SASS" command
+  > Remmember to click that command everytime you open your project, in case it's not activated automatically
+4. Test your SCSS: type some css command and see if your indes.css updates automatically.
 ## Built with
 - HTML5
 - CSS3
