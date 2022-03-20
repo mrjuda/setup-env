@@ -8,8 +8,9 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
 - Setup ES6 modules
 - Apply these settings to a project: Awesome Books
 ## Tutorial
-### PART 1: REPOSITORY: CREATE AND SYNC
-1. Create a new repo on GitHub (MIT LICENSE ONLY, no README, no nothing)
+### 1. REPOSITORY: CREATE AND SYNC
+1.1 Create a new repo on GitHub (MIT LICENSE ONLY, no README, no nothing)
+1.1. Create a new repo on GitHub (MIT LICENSE ONLY, no README, no nothing)
 2. Open vscode > Clone Git Repository > Clone from GitHub > choose the one you created
 3. Choose a local folder to sync the repo > open the project
 4. With the project open in vscode, open the VSCODE TERMINAL
@@ -31,7 +32,7 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
 
 Now you're gonna use vscode for everything. Almost no GitHub from now on.
 
-### PART 2: HTML + CSS LINTER CONFIGURATION
+### 2. HTML + CSS LINTER CONFIGURATION
 > *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/linters-config/tree/master/html-css-js)
 
 **SET-UP GITHUB ACTIONS:**
@@ -48,7 +49,7 @@ Now you're gonna use vscode for everything. Almost no GitHub from now on.
     - In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `"**/*.{css,scss}"` with `"**/*.scss"`
     - Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
 
-  **SET-UP LOCAL LINTERS:**
+**SET-UP LOCAL LINTERS:**
 - Create a `.gitignore` file in your *ROOT* directory and add `node_module` to it:
   ```
   # .gitignore
@@ -91,7 +92,7 @@ You can get the Lighthouse report by any of the following ways:
 3. Run the following command on the root directory of your project to fix linter errors:
   `npx eslint .`
 
-### PART 3: INITIAL FILES AND FOLDERS
+### 3. INITIAL FILES AND FOLDERS
 > *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/curriculum-javascript/blob/main/books/books_with_es6.md).
 
 1. Create README.md file: do it like a PRO (you can copy this one, to begin, then make changes)
