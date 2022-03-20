@@ -8,7 +8,7 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
 - Setup ES6 modules
 - Apply these settings to a project: Awesome Books
 ### Tutorial
-- PART 1: Repo: create, sync, initial PR:
+- PART 1: REPOSITORY: CREATE AND SYNC
   - New repo on GitHub (MIT LICENSE ONLY, no README, no nothing)
   - Open vscode > Clone Git Repository > Clone from GitHub > choose the one you created
   - Choose a local folder to sync the repo > open the project
@@ -25,8 +25,8 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
   - Open GitHub > Open a new PULL REQUEST from this branch **(DO IT LIKE A PRO)**
   - Now, you're gonna use vscode for everything. Almost no GitHub from now on.
 
-- PART 2: Initial files and folders
-> *IMPORTANT NOTE:* the following instructions were based on [this Microverse tutorial](https://github.com/microverseinc/curriculum-javascript/blob/main/books/books_with_es6.md).
+- PART 2: INITIAL FILES AND FOLDERS
+  > *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/curriculum-javascript/blob/main/books/books_with_es6.md).
   - Create README.md file: do it like a PRO (you can copy this one, to begin, then make changes)
   - SAVE: ADD: COMMIT: PUSH: `git add .` >> `git commit -m "Add README.md file"` >> `git push`
   - Use `npm init -y` command to create package.json file.
@@ -40,6 +40,9 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
   - Create a directory called `modules`.
   - ADD: COMMIT: PUSH: `git add .` >> `git commit -m "Add initial folders and files"` >> `git push`
 
+- PART 3: HTML + CSS LINTER CONFIGURATION
+  > *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/linters-config/tree/master/html-css-js)
+  - 
 
 ## Built with
 - HTML5
