@@ -15,7 +15,9 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
   - With the project open in vscode, open the VSCODE TERMINAL
   - Initial SYNC/PUSH to the GitHub repository:
   - `git push --set-upstream origin main` (make sure there are no errors)
-  > If you get any error, make sure you connect your local Git instalation to your remote Github repository properly.
+
+  > If you get any errors, make sure you connect your local Git instalation to your remote Github repository properly.
+  
   - Create a new branch > Add > Commit > Push:
   - `git checkout -b repoSetup` >> `git push --set-upstream origin repoSetup`
   - Open LICENSE file > ADD A BLANK LINE to the end of the file > Save > Add: Commit: Push
