@@ -65,34 +65,28 @@ You can get the Lighthouse report by any of the following ways:
 
 **WEBHINT:**
 1. Run
-  ```
-  npm init -y
-  ```
-  then...
-  ```
-  npm install --save-dev hint@6.x
-  ```
+  `npm init -y`
+    then...
+  `npm install --save-dev hint@6.x`
+
 2. Copy [.hintrc](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.hintrc) to the root directory of your project.
 3. Run the following command to fix validation errors:
-  ```
-  npx hint .
-  ```
+  `npx hint .`
 
 **STYLELINT:**
 1. Run
-```
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-```
+`npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
+
 2. Copy [.stylelintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.stylelintrc.json) to the root directory of your project
+
 3. Run the following command on the root directory of your project to fix linter errors:
   `npx stylelint "**/*.scss"` 
   This will lint your SCSS files and not the generated CSS
 
 **ESLINT**
 1. Run
-```
-npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
-```
+`npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
+
 2. Copy [.eslintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.eslintrc.json) to the root directory of your project
 3. Run the following command on the root directory of your project to fix linter errors:
   `npx eslint .`
