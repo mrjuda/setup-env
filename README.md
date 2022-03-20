@@ -28,6 +28,7 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
 
 #### PART 2: HTML + CSS LINTER CONFIGURATION
 > *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/linters-config/tree/master/html-css-js)
+
 **SET-UP GITHUB ACTIONS:**
 - Create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that folder.
   ```
@@ -90,6 +91,7 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
 
 #### PART 3: INITIAL FILES AND FOLDERS
 > *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/curriculum-javascript/blob/main/books/books_with_es6.md).
+
 - Create README.md file: do it like a PRO (you can copy this one, to begin, then make changes)
 - SAVE: ADD: COMMIT: PUSH: 
   `git add .` >> `git commit -m "Add README.md file"` >> `git push`
