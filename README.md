@@ -124,9 +124,12 @@ Make sure you copy/paste the content of [.eslintrc.json](https://raw.githubuserc
   ```
 
 **SAVE > COMMIT > PUSH**
+
 Once finished the linter configurations, make sure you saved all the created files, then:
   ```
-  git add .; git commit -m "Set up linter configurations"; git push
+  git add .
+  git commit -m "Set up linter configurations"
+  git push
   ```
 
 ### 3. INITIAL FILES AND FOLDERS
@@ -194,6 +197,7 @@ Once finished the linter configurations, make sure you saved all the created fil
   touch ./styles/index.scss
   ```
   then, open it.
+  
 3. On the bottom of your VSCODE, click on the "WATCH SASS" command
   > Remmember to click that command everytime you open your project, in case it's not activated automatically
 
