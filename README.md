@@ -104,7 +104,7 @@ Make sure you copy/paste the content of [.stylelintrc.json](https://raw.githubus
   ```
   npx stylelint "**/*.scss"
   ```
-  This will lint your SCSS files and not the generated CSS
+This will lint your SCSS files and not the generated CSS
 
 **ESLINT**
 1. Run
@@ -121,6 +121,12 @@ Make sure you copy/paste the content of [.eslintrc.json](https://raw.githubuserc
 3. Run the following command on the root directory of your project to fix linter errors:
   ```
   npx eslint .
+  ```
+
+**SAVE > COMMIT > PUSH**
+Once finished the linter configurations, make sure you saved all the created files, then:
+  ```
+  git add .; git commit -m "Set up linter configurations"; git push
   ```
 
 ### 3. INITIAL FILES AND FOLDERS
