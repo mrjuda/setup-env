@@ -32,7 +32,7 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
   git commit -m "Initial commit"
   git push
   ```
-9. Open GitHub and open a new *pull request* from this branch **(DO IT LIKE A PRO)**
+9. Open GitHub and open a new *pull request* from this branch (remmember to **do it like a pro**).
 
 Now you're gonna use vscode for everything. Almost no GitHub from now on.
 
@@ -85,7 +85,7 @@ You can get the Lighthouse report by any of the following ways:
   ```
 > Make sure you copy/paste the content of [.hintrc](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.hintrc) to that file.
 
-3. Run the following command to fix validation errors:
+3. Run the following command on the root directory of your project to fix your html's linter errors:
   ```
   npx hint .
   ```
@@ -102,11 +102,11 @@ You can get the Lighthouse report by any of the following ways:
   ```
 > Make sure you copy/paste the content of [.stylelintrc.json](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.stylelintrc.json) to that file.
 
-3. Run the following command on the root directory of your project to fix linter errors:
+3. Run the following command on the root directory of your project to fix your scss linter errors:
   ```
   npx stylelint "**/*.scss"
   ```
-This will lint your SCSS files and not the generated CSS
+> This will lint your SCSS files and not the generated CSS
 
 **ESLINT**
 1. Run
@@ -120,7 +120,7 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
   ```
 Make sure you copy/paste the content of [.eslintrc.json](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.eslintrc.json) to that file.
 
-3. Run the following command on the root directory of your project to fix linter errors:
+3. Run the following command on the root directory of your project to fix your JS files' linter errors:
   ```
   npx eslint .
   ```
