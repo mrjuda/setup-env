@@ -46,7 +46,7 @@ Now you're gonna use vscode for everything. Almost no GitHub from now on.
   ```
   mkdir .github; mkdir .github/workflows; touch .github/workflows/linters.yml
   ```
-    > Make sure you copy/paste the content of [`.github/workflows/linters.yml`](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.github/workflows/linters.yml) to the file above.
+> Make sure you copy/paste the content of [`.github/workflows/linters.yml`](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.github/workflows/linters.yml) to the file above.
 
 > Thanks to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help on the step 3 below:
 
