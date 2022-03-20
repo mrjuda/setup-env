@@ -14,19 +14,26 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
 3. Choose a local folder to sync the repo > open the project
 4. With the project open in vscode, open the VSCODE TERMINAL
 5. Initial SYNC/PUSH to the GitHub repository:
-  `git push --set-upstream origin main` (make sure there are no errors)
+  ```
+  git push --set-upstream origin main
+  ```
+  (make sure there are no errors)
 
   > If you get any errors, make sure you connect your local Git instalation to your remote Github repository properly.
 
 6. Create a new branch and Push:
-  `git checkout -b repoSetup`
-  `git push --set-upstream origin repoSetup`
+  ```
+  git checkout -b repoSetup
+  git push --set-upstream origin repoSetup
+  ```
 
 7. Open LICENSE file and add a *blank line* to the end of the file
 8. SAVE: ADD: COMMIT: PUSH:
-  `git add .`
-  `git commit -m "Initial commit"`
-  `git push`
+  ```
+  git add .
+  git commit -m "Initial commit"
+  git push
+  ```
 9. Open GitHub and open a new *pull request* from this branch **(DO IT LIKE A PRO)**
 
 Now you're gonna use vscode for everything. Almost no GitHub from now on.
@@ -36,9 +43,11 @@ Now you're gonna use vscode for everything. Almost no GitHub from now on.
 
 **SET-UP GITHUB ACTIONS:**
 1. Create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that folder.
-  `mkdir .github`
-  `mkdir .github/workflows`
-  `touch .github/workflows/linters.yml`
+  ```
+  mkdir .github
+  mkdir .github/workflows
+  touch .github/workflows/linters.yml
+  ```
   
 2. Make sure you copy/paste the content of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that file.
 
@@ -65,50 +74,72 @@ You can get the Lighthouse report by any of the following ways:
 
 **WEBHINT:**
 1. Run
-  `npm init -y`
-    then...
-  `npm install --save-dev hint@6.x`
+  ```
+  npm init -y
+  npm install --save-dev hint@6.x
+  ```
 
 2. Copy [.hintrc](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.hintrc) to the root directory of your project.
 3. Run the following command to fix validation errors:
-  `npx hint .`
+  ```
+  npx hint .
+  ```
 
 **STYLELINT:**
 1. Run
-`npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
+```
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+```
 
 2. Copy [.stylelintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.stylelintrc.json) to the root directory of your project
 
 3. Run the following command on the root directory of your project to fix linter errors:
-  `npx stylelint "**/*.scss"` 
+  ```
+  npx stylelint "**/*.scss"
+  ```
   This will lint your SCSS files and not the generated CSS
 
 **ESLINT**
 1. Run
-`npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
+```
+npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+```
 
 2. Copy [.eslintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.eslintrc.json) to the root directory of your project
 3. Run the following command on the root directory of your project to fix linter errors:
-  `npx eslint .`
+  ```
+  npx eslint .
+  ```
 
 ### 3. INITIAL FILES AND FOLDERS
 > *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/curriculum-javascript/blob/main/books/books_with_es6.md).
 
 1. Create README.md file: do it like a PRO (you can copy this one, to begin, then make changes)
 2. SAVE: ADD: COMMIT: PUSH: 
-  `git add .` >> `git commit -m "Add README.md file"` >> `git push`
+  ```
+  git add .
+  git commit -m "Add README.md file"
+  git push
+  ```
+
 3. Create your scripts folder and index file:
-  `mkdir scripts`
-  `touch ./scripts/index.js`
+  ```
+  mkdir scripts
+  touch ./scripts/index.js
+  ```
 4. Create your styles' folder and index files:
-  `mkdir styles`
-  `touch ./styles/index.css`
+  ```
+  mkdir styles
+  touch ./styles/index.css
+  ```
 5. Create the main `index.html` file.
-  `touch index.html`
+  ```
+  touch index.html
+  ```
 6. Inside your empty `index.html` file, on the first line, type `!` and click on the first option to fill it with the basics.
 7. Link your `index.js` and `index.css` files in the `index.html` file:
-  - Before opening `<title>` >> `<link rel="stylesheet" href="./styles/index.css" />`
-  - Before closing `</body>` >> `<script src="/scripts/index.js"></script>`
+  - Before opening `<title>` > `<link rel="stylesheet" href="./styles/index.css" />`
+  - Before closing `</body>` > `<script src="/scripts/index.js"></script>`
 8. Create a directory called `modules`.
 9. ADD: COMMIT: PUSH: 
   ```
