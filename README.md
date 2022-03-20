@@ -95,11 +95,10 @@ npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standa
 ```
 
 2. Copy [.stylelintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.stylelintrc.json) to the root directory of your project
-```
-touch .stylelintrc.json
-```
-
-  Make sure you copy/paste the content of [.stylelintrc.json](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.stylelintrc.json) to that file.
+  ```
+  touch .stylelintrc.json
+  ```
+Make sure you copy/paste the content of [.stylelintrc.json](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.stylelintrc.json) to that file.
 
 3. Run the following command on the root directory of your project to fix linter errors:
   ```
@@ -117,8 +116,7 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
   ```
   touch .eslintrc.json
   ```
-
-  Make sure you copy/paste the content of [.eslintrc.json](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.eslintrc.json) to that file.
+Make sure you copy/paste the content of [.eslintrc.json](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.eslintrc.json) to that file.
 
 3. Run the following command on the root directory of your project to fix linter errors:
   ```
