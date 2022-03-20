@@ -120,6 +120,7 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
 1. Make sure you have the "LIVE SASS COMPILER" extension installed on your VSCODE
 2. Create a `index.scss` inside your styles directory
   `touch ./styles/index.scss`
+  then, open it.
 3. On the bottom of your VSCODE, click on the "WATCH SASS" command
   > Remmember to click that command everytime you open your project, in case it's not activated automatically
 4. Test your SCSS: type some css command and see if your indes.css updates automatically.
