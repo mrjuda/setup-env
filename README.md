@@ -100,23 +100,23 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
 #### PART 3: INITIAL FILES AND FOLDERS
 > *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/curriculum-javascript/blob/main/books/books_with_es6.md).
 
-- Create README.md file: do it like a PRO (you can copy this one, to begin, then make changes)
-- SAVE: ADD: COMMIT: PUSH: 
+1. Create README.md file: do it like a PRO (you can copy this one, to begin, then make changes)
+2. SAVE: ADD: COMMIT: PUSH: 
   `git add .` >> `git commit -m "Add README.md file"` >> `git push`
-- Create your scripts folder and index file:
+3. Create your scripts folder and index file:
   `mkdir scripts`
   `touch ./scripts/index.js`
-- Create your styles' folder and index files:
+4. Create your styles' folder and index files:
   `mkdir styles`
   `touch ./styles/index.css`
-- Create the main `index.html` file.
+5. Create the main `index.html` file.
   `touch index.html`
-- Inside your empty `index.html` file, on the first line, type `!` and click on the first option to fill it with the basics.
-- Link your `index.js` and `index.css` files in the `index.html` file:
+6. Inside your empty `index.html` file, on the first line, type `!` and click on the first option to fill it with the basics.
+7. Link your `index.js` and `index.css` files in the `index.html` file:
   - Before opening `<title>` >> `<link rel="stylesheet" href="./styles/index.css" />`
   - Before closing `</body>` >> `<script src="/scripts/index.js"></script>`
-- Create a directory called `modules`.
-- ADD: COMMIT: PUSH: 
+8. Create a directory called `modules`.
+9. ADD: COMMIT: PUSH: 
   `git add .` >> `git commit -m "Add initial folders and files"` >> `git push`
 
 #### PART 4: SCSS SETTINGS
