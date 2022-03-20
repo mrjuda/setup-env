@@ -18,32 +18,35 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
 
   > If you get any errors, make sure you connect your local Git instalation to your remote Github repository properly.
 
-6. Create a new branch > Add > Commit > Push:
-  `git checkout -b repoSetup` >> `git push --set-upstream origin repoSetup`
-7. Open LICENSE file > ADD A BLANK LINE to the end of the file
-8. SAVE: ADD: COMMIT: PUSH:
-  `git add .` >> `git commit -m "Initial commit"` >> `git push`
-9. Open GitHub > Open a new PULL REQUEST from this branch **(DO IT LIKE A PRO)**
+6. Create a new branch and Push:
+  `git checkout -b repoSetup`
+  `git push --set-upstream origin repoSetup`
 
-Now, you're gonna use vscode for everything. Almost no GitHub from now on.
+7. Open LICENSE file and add a *blank line* to the end of the file
+8. SAVE: ADD: COMMIT: PUSH:
+  `git add .`
+  `git commit -m "Initial commit"`
+  `git push`
+9. Open GitHub and open a new *pull request* from this branch **(DO IT LIKE A PRO)**
+
+Now you're gonna use vscode for everything. Almost no GitHub from now on.
 
 #### PART 2: HTML + CSS LINTER CONFIGURATION
 > *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/linters-config/tree/master/html-css-js)
 
 **SET-UP GITHUB ACTIONS:**
 1. Create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that folder.
-  ```
-  mkdir .github
-  mkdir .github/workflows
-  touch .github/workflows/linters.yml
-  ```
+  `mkdir .github`
+  `mkdir .github/workflows`
+  `touch .github/workflows/linters.yml`
+  
 2. Make sure you copy/paste the content of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that file.
 
 > Thanks to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help on the step 3 below:
 
 3. If you work with SCSS files, you need to perform a few modifications to the linter configuration files.
-  1. In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `"**/*.{css,scss}"` with `"**/*.scss"`
-  2. Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
+  - In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `"**/*.{css,scss}"` with `"**/*.scss"`
+  - Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
 
 **SET-UP LOCAL LINTERS:**
 - Create a `.gitignore` file in your *ROOT* directory and add `node_module` to it:
@@ -82,7 +85,8 @@ npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standa
 ```
 2. Copy [.stylelintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.stylelintrc.json) to the root directory of your project
 3. Run the following command on the root directory of your project to fix linter errors:
-  `npx stylelint "**/*.{css,scss}"`
+  `npx stylelint "**/*.scss"` 
+  This will lint your SCSS files and not the generated CSS
 
 **ESLINT**
 1. Run
@@ -124,6 +128,8 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
 3. On the bottom of your VSCODE, click on the "WATCH SASS" command
   > Remmember to click that command everytime you open your project, in case it's not activated automatically
 4. Test your SCSS: type some css command and see if your indes.css updates automatically.
+5. Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
+
 ## Built with
 - HTML5
 - CSS3
