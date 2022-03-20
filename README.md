@@ -148,7 +148,7 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
   git push
   ```
 
-### PART 4: SCSS SETTINGS
+### 4. SCSS SETTINGS
 > Thanks again to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help here.
 1. Make sure you have the "LIVE SASS COMPILER" extension installed on your VSCODE
 2. Create a `index.scss` inside your styles directory
@@ -160,6 +160,10 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
   > Remmember to click that command everytime you open your project, in case it's not activated automatically
 4. Test your SCSS: type some css lines inside your `index.scss` file, save it, and see if your indes.css updates automatically.
 5. Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
+
+### 5. LINT EVERYTHING
+To linter your files locally (before pushing to your GitHub repository), use the following commands:
+
 
 ## Built with
 - HTML5
