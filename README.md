@@ -17,7 +17,7 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
   ```
   git push --set-upstream origin main
   ```
-  (make sure there are no errors)
+  > (make sure there are no errors)
 
   > If you get any errors, make sure you connect your local Git instalation to your remote Github repository properly.
 
@@ -46,8 +46,7 @@ Now you're gonna use vscode for everything. Almost no GitHub from now on.
   ```
   mkdir .github; mkdir .github/workflows; touch .github/workflows/linters.yml
   ```
-  
-2. Make sure you copy/paste the content of [`.github/workflows/linters.yml`](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.github/workflows/linters.yml) to that file.
+    > Make sure you copy/paste the content of [`.github/workflows/linters.yml`](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.github/workflows/linters.yml) to the file above.
 
 > Thanks to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help on the step 3 below:
 
