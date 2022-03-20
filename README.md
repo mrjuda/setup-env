@@ -9,8 +9,7 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
 - Apply these settings to a project: Awesome Books
 ## Tutorial
 ### 1. REPOSITORY: CREATE AND SYNC
-1.1 Create a new repo on GitHub (MIT LICENSE ONLY, no README, no nothing)
-1.1. Create a new repo on GitHub (MIT LICENSE ONLY, no README, no nothing)
+1. Create a new repo on GitHub (MIT LICENSE ONLY, no README, no nothing)
 2. Open vscode > Clone Git Repository > Clone from GitHub > choose the one you created
 3. Choose a local folder to sync the repo > open the project
 4. With the project open in vscode, open the VSCODE TERMINAL
@@ -112,17 +111,22 @@ You can get the Lighthouse report by any of the following ways:
   - Before closing `</body>` >> `<script src="/scripts/index.js"></script>`
 8. Create a directory called `modules`.
 9. ADD: COMMIT: PUSH: 
-  `git add .` >> `git commit -m "Add initial folders and files"` >> `git push`
+
+  `git add .`
+  `git commit -m "Add initial folders and files"`
+  `git push`
 
 ### PART 4: SCSS SETTINGS
 > Thanks again to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help here.
 1. Make sure you have the "LIVE SASS COMPILER" extension installed on your VSCODE
 2. Create a `index.scss` inside your styles directory
-  `touch ./styles/index.scss`
+  ```
+  touch ./styles/index.scss
+  ```
   then, open it.
 3. On the bottom of your VSCODE, click on the "WATCH SASS" command
   > Remmember to click that command everytime you open your project, in case it's not activated automatically
-4. Test your SCSS: type some css command and see if your indes.css updates automatically.
+4. Test your SCSS: type some css lines inside your `index.scss` file, save it, and see if your indes.css updates automatically.
 5. Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
 
 ## Built with
