@@ -111,12 +111,11 @@ You can get the Lighthouse report by any of the following ways:
   - Before closing `</body>` >> `<script src="/scripts/index.js"></script>`
 8. Create a directory called `modules`.
 9. ADD: COMMIT: PUSH: 
-
-  `git add .`
-
-  `git commit -m "Add initial folders and files"`
-  
-  `git push`
+  ```
+  git add .
+  git commit -m "Add initial folders and files"
+  git push
+  ```
 
 ### PART 4: SCSS SETTINGS
 > Thanks again to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help here.
