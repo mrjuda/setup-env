@@ -169,9 +169,7 @@ To linter your files locally (before pushing to your GitHub repository), use the
 
 Or... use it all together:
 ```
-npx stylelint "**/*.scss"
-npx hint .
-npx eslint .
+npx stylelint "**/*.scss"; npx hint .; npx eslint .
 ```
 
 ## Built with
