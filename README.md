@@ -1,4 +1,4 @@
-# Setup Environment: LINTERS + SCSS + ES6
+# Setting up a new repo: LINTERS + SCSS
 ## Project description
 This is a tutorial on how to create a repository on GitHub, sync it locally with VSCode, and set up its linters and SCSS.
 
