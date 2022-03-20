@@ -140,7 +140,27 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
 7. Link your `index.js` and `index.css` files in the `index.html` file:
   - Before opening `<title>` > `<link rel="stylesheet" href="./styles/index.css" />`
   - Before closing `</body>` > `<script src="/scripts/index.js"></script>`
+  - Your `index.html` should look similar to this:
+  ```
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>title</title>
+  </head>
+  <body>
+  
+  <script src="./modules/index.js"></script>
+  </body>
+  </html>
+```
 8. Create a directory called `modules`.
+  ```
+  mkdir modules
+  ```
 9. ADD: COMMIT: PUSH: 
   ```
   git add .
@@ -158,6 +178,7 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
   then, open it.
 3. On the bottom of your VSCODE, click on the "WATCH SASS" command
   > Remmember to click that command everytime you open your project, in case it's not activated automatically
+
 4. Test your SCSS: type some css lines inside your `index.scss` file, save it, and see if your indes.css updates automatically.
 5. Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
 
