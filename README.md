@@ -9,7 +9,7 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
 - Apply these settings to a project: Awesome Books
 ## Tutorial
 ### 1. REPOSITORY: CREATE AND SYNC
-1. Create a new repo on GitHub (MIT LICENSE ONLY, no README, no nothing)
+1. Create a new repo on GitHub (only create a MIT LICENSE file, nothing else, no README, no nothing)
 2. Open vscode > Clone Git Repository > Clone from GitHub > choose the one you created
 3. Choose a local folder to sync the repo > open the project
 4. With the project open in vscode, open the VSCODE TERMINAL
@@ -54,8 +54,8 @@ Now you're gonna use vscode for everything. Almost no GitHub from now on.
 > Thanks to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help on the step 3 below:
 
 3. If you work with SCSS files, you need to perform a few modifications to the linter configuration files.
-    - In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `"**/*.{css,scss}"` with `"**/*.scss"`
-    - Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
+- In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `"**/*.{css,scss}"` with `"**/*.scss"`
+- Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
 
 **SET-UP LOCAL LINTERS:**
 - Create a `.gitignore` file in your *ROOT* directory and add `node_module` to it:
