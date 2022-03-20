@@ -175,6 +175,12 @@ npx hint .
 ```
 npx eslint .
 ```
+Or... use it all together:
+```
+npx stylelint "**/*.scss"
+npx hint .
+npx eslint .
+```
 
 ## Built with
 - HTML5
