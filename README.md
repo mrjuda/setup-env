@@ -44,9 +44,7 @@ Now you're gonna use vscode for everything. Almost no GitHub from now on.
 **SET-UP GITHUB ACTIONS:**
 1. Create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that folder.
   ```
-  mkdir .github
-  mkdir .github/workflows
-  touch .github/workflows/linters.yml
+  mkdir .github; mkdir .github/workflows; touch .github/workflows/linters.yml
   ```
   
 2. Make sure you copy/paste the content of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that file.
@@ -60,7 +58,7 @@ Now you're gonna use vscode for everything. Almost no GitHub from now on.
 **SET-UP LOCAL LINTERS:**
 - Create a `.gitignore` file in your *ROOT* directory and add `node_modules` to it:
   ```
-  touch .gitignore; echo '# .gitignore' >> .gitignore; echo 'node_modules\' >> .gitignore
+  touch .gitignore; echo 'node_modules' >> .gitignore
   ```
 
 **LIGHTHOUSE:**
@@ -74,11 +72,17 @@ You can get the Lighthouse report by any of the following ways:
 **WEBHINT:**
 1. Run
   ```
-  npm init -y
-  npm install --save-dev hint@6.x
+  npm init -y; npm install --save-dev hint@6.x
   ```
 
 2. Copy [.hintrc](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.hintrc) to the root directory of your project.
+```
+touch .hintrc
+```
+
+  Make sure you copy/paste the content of [.hintrc](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.hintrc) to that file.
+
+
 3. Run the following command to fix validation errors:
   ```
   npx hint .
@@ -91,6 +95,11 @@ npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standa
 ```
 
 2. Copy [.stylelintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.stylelintrc.json) to the root directory of your project
+```
+touch .stylelintrc.json
+```
+
+  Make sure you copy/paste the content of [.stylelintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.stylelintrc.json) to that file.
 
 3. Run the following command on the root directory of your project to fix linter errors:
   ```
