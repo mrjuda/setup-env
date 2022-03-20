@@ -1,6 +1,6 @@
-# Sandbox: Books ES6
+# Setup Environment: LINTERS + SCSS + ES6
 ## Project description
-This is a testing lab for implementing "Awesome Books" on ES6 standards.
+This is a tutorial on how to create a repository on GitHub, sync it locally with VSCode, and set up its linters and SCSS.
 
 ## Objectives
 - Setup linters for HTML + CSS + JavaScript
