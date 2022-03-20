@@ -17,9 +17,7 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
   ```
   git push --set-upstream origin main
   ```
-  > (make sure there are no errors)
-
-  > If you get any errors, make sure you connect your local Git instalation to your remote Github repository properly.
+> If you get any errors, make sure you connect your local Git instalation to your remote Github repository properly.
 
 6. Create a new branch and Push:
   ```
@@ -48,9 +46,8 @@ Now you're gonna use vscode for everything. Almost no GitHub from now on.
   ```
 > Make sure you copy/paste the content of [`.github/workflows/linters.yml`](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.github/workflows/linters.yml) to the file above.
 
-> Thanks to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help on the step 3 below:
-
 3. If you work with SCSS files, you need to perform a few modifications to the linter configuration files.
+> Thanks to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help on the step below:
 - In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `npx stylelint "**/*.{css,scss}"` with `npx stylelint "**/*.scss"`
 - Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
 
@@ -75,12 +72,10 @@ You can get the Lighthouse report by any of the following ways:
   ```
 
 2. Copy [.hintrc](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.hintrc) to the root directory of your project.
-```
-touch .hintrc
-```
-
-  Make sure you copy/paste the content of [.hintrc](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.hintrc) to that file.
-
+  ```
+  touch .hintrc
+  ```
+> Make sure you copy/paste the content of [.hintrc](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.hintrc) to that file.
 
 3. Run the following command to fix validation errors:
   ```
@@ -89,15 +84,15 @@ touch .hintrc
 
 **STYLELINT:**
 1. Run
-```
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-```
+  ```
+  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+  ```
 
 2. Copy [.stylelintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.stylelintrc.json) to the root directory of your project
   ```
   touch .stylelintrc.json
   ```
-Make sure you copy/paste the content of [.stylelintrc.json](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.stylelintrc.json) to that file.
+> Make sure you copy/paste the content of [.stylelintrc.json](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.stylelintrc.json) to that file.
 
 3. Run the following command on the root directory of your project to fix linter errors:
   ```
