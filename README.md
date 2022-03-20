@@ -26,24 +26,7 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
 - Open GitHub > Open a new PULL REQUEST from this branch **(DO IT LIKE A PRO)**
 - Now, you're gonna use vscode for everything. Almost no GitHub from now on.
 
-#### PART 2: INITIAL FILES AND FOLDERS
-> *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/curriculum-javascript/blob/main/books/books_with_es6.md).
-- Create README.md file: do it like a PRO (you can copy this one, to begin, then make changes)
-- SAVE: ADD: COMMIT: PUSH: 
-  `git add .` >> `git commit -m "Add README.md file"` >> `git push`
-- Use `npm init -y` command to create package.json file.
-- Create the entry point for your JavaScript code called `index.js`
-- Create `index.css` file for your styles.
-- Create the main `index.html` file.
-- Inside your empty `index.html` file, on the first line, type `!` and click on the first option to fill it with the basics.
-- Link your `index.js` and `index.css` files in the `index.html` file:
-  - Before opening `<title>` >> `<link rel="stylesheet" href="index.css" />`
-  - Before closing `</body>` >> `<script src="index.js"></script>`
-- Create a directory called `modules`.
-- ADD: COMMIT: PUSH: 
-  `git add .` >> `git commit -m "Add initial folders and files"` >> `git push`
-
-#### PART 3: HTML + CSS LINTER CONFIGURATION
+#### PART 2: HTML + CSS LINTER CONFIGURATION
 > *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/linters-config/tree/master/html-css-js)
 **SET-UP GITHUB ACTIONS:**
 - Create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that folder.
@@ -53,6 +36,9 @@ This is a testing lab for implementing "Awesome Books" on ES6 standards.
   touch .github/workflows/linters.yml
   ```
 - Make sure you copy/paste the content of [`.github/workflows/linters.yml`](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that file.
+  > NOTE: If you work with SCSS files, you need to perform a few modifications to the linter configuration files.
+    1. In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `"**/*.{css,scss}"` with `"**/*.scss"`
+    2. Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
 
 **SET-UP LOCAL LINTERS:**
 - Create a `.gitignore` file in your *ROOT* directory and add `node_module` to it:
@@ -71,6 +57,10 @@ You can get the Lighthouse report by any of the following ways:
 
 **WEBHINT:**
 1. Run
+  ```
+  npm init -y
+  ```
+  then...
   ```
   npm install --save-dev hint@6.x
   ```
@@ -98,6 +88,30 @@ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-i
 3. Run the following command on the root directory of your project to fix linter errors:
   `npx eslint .`
 
+#### PART 3: INITIAL FILES AND FOLDERS
+> *IMPORTANT NOTE:* the following instructions are based on [this Microverse tutorial](https://github.com/microverseinc/curriculum-javascript/blob/main/books/books_with_es6.md).
+- Create README.md file: do it like a PRO (you can copy this one, to begin, then make changes)
+- SAVE: ADD: COMMIT: PUSH: 
+  `git add .` >> `git commit -m "Add README.md file"` >> `git push`
+- Create your scripts folder and index file:
+  `mkdir scripts`
+  `touch ./scripts/index.js`
+- Create your styles' folder and index files:
+  `mkdir styles`
+  `touch ./styles/index.css`
+- Create the main `index.html` file.
+  `touch index.html`
+- Inside your empty `index.html` file, on the first line, type `!` and click on the first option to fill it with the basics.
+- Link your `index.js` and `index.css` files in the `index.html` file:
+  - Before opening `<title>` >> `<link rel="stylesheet" href="./styles/index.css" />`
+  - Before closing `</body>` >> `<script src="/scripts/index.js"></script>`
+- Create a directory called `modules`.
+- ADD: COMMIT: PUSH: 
+  `git add .` >> `git commit -m "Add initial folders and files"` >> `git push`
+
+#### PART 4: SCSS SETTINGS
+> Huge thanks to [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile") for the help here.
+- 
 
 ## Built with
 - HTML5
