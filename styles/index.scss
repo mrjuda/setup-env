@@ -1,7 +1,36 @@
 * {
-  color: black;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  color: #000;
+  border-color: transparent;
 }
 
 body {
-  background-color: lightblue;
+  margin: 0 0.5rem;
+  // background-color: lightblue;
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+.readme-link {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: #f00;
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  border-inline: #f00 solid 0.2rem;
+  cursor: pointer;
+  // margin: 1rem 1rem;
+}
+
+.readme-link:hover {
+  color: #f00;
+  background-color: #fff;
+  border: #f00 solid;
 }
